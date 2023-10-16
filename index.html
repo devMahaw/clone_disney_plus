@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Disney+</title>
-    <link rel = "icon" href = "dist/images/favicon.ico">
-    <link rel="stylesheet" href="dist/styles/main.css">
+    <link rel="icon" href="dist/images/favicon.svg">
+    <link rel = "stylesheet" href = "dist/styles/main.css">
 </head>
 <body>
     <main>
@@ -29,7 +29,7 @@
                         <span class = "text">R$ 45,90/mês*</span>
                     </li> 
                     <li class = "hero-content-combos-combo">
-                        <img src = "dist/images/logos/disney_star_plus.png" alt = "Parceria Disney+ - Star+ - Combo+">
+                        <img src = "dist/images/logos/disney_star_plus_starzplay.png" alt = "Parceria Disney+ - Star+ - Starzplay">
                         <button>ASSINE AGORA</button>
                         <span class = "text">R$ 45,90/mês*</span>
                     </li> 
@@ -39,7 +39,75 @@
                 </p>
             </div>
         </section>
+        <section class = "shows">
+            <nav class = "shows-tabs">
+                <button data-tab-button = "em-breve" class = "shows-tabs-button shows-tabs-button-is-active">EM BREVE</button>
+                <button data-tab-button = "populares" class = "shows-tabs-button">MAIS POPULARES</button>
+                <button data-tab-button = "star-plus" class = "shows-tabs-button">MAIS NO STAR+</button>
+            </nav>
+            <ul data-tab-id = "em-breve" class = "shows-list shows-list-is-active">
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/em_breve/desencantada.jpg" alt = "Desencantada">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/em_breve/willow.jpg" alt = "Willow">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/em_breve/lobisomem.jpg" alt = "Lobisomem na Noite">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/em_breve/spidey.jpg" alt = "Spidey e Seus Amigos Espetaculares">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/em_breve/the_santa_clauses.jpg" alt = "The Santa Clauses">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/em_breve/sem_limites.jpg" alt = "Sem Limites">
+                </li>
+            </ul>
+            <ul data-tab-id = "populares" class = "shows-list">
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_populares/red.jpg" alt = "Red Crescer é uma Fera">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_populares/cavaleira_da_lua.jpg" alt = "Cavaleiro da Lua">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_populares/obi_wan.jpg" alt = "Obi-Wan Kenobi">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_populares/bluey.jpg" alt = "Bluey">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_populares/tudo_igual_sqn.jpg" alt = "Tudo Igual... SQN">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt = "O Incrível Dr. Pol">
+                </li>
+            </ul>
+            <ul data-tab-id = "star-plus" class = "shows-list">
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_no_star_plus/libertadores.jpg" alt = "Libertadores">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_no_star_plus/os_simpson.jpg" alt = "Os Simpsons">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_no_star_plus/premier_league.jpg" alt = "Premier League">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_no_star_plus/the_kardashians.jpg" alt = "The Kardashians">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_no_star_plus/belair.jpg" alt = "Belair">
+                </li>
+                <li class = "shows-list-item">
+                    <img src = "./dist/images/mais_no_star_plus/nba.jpg" alt = "NBA">
+                </li>
+            </ul>
+        </section>
     </main>
+
     <script src = "dist/scripts/main.js"></script>
 </body>
 </html>
