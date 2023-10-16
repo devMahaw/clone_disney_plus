@@ -5,7 +5,7 @@ const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 
 function comprimeImagens() {
-    return gulp.src("./src/images/*")
+    return gulp.src("./src/images/**")
         .pipe(imagemin())
         .pipe(gulp.dest("./dist/images"))
 }
