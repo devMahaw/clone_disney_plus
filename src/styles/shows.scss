@@ -1,4 +1,4 @@
-@use "variaveis";
+@use "variables";
 
 .shows {
     padding: 2vw 5.6vw;
@@ -28,7 +28,7 @@
         justify-content: center;
 
         &-button {
-            color: variaveis.$corTextoSecundario;
+            color: variables.$corTextoSecundario;
             font-size: 20px;
             border: none;
             padding-bottom: 5px;
@@ -37,7 +37,7 @@
             cursor: pointer;
 
             &-is-active {
-                border-bottom: 5px solid variaveis.$corTextoSecundario;
+                border-bottom: 5px solid variables.$corTextoSecundario;
             }
         }
     }

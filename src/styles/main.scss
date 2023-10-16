@@ -1,4 +1,4 @@
-@use "variaveis";
+@use "variables";
 @use "hero";
 @use "shows";
 @use "plans";
@@ -18,12 +18,12 @@
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: variaveis.$corTextoPrincipal;
+    color: variables.$corTextoPrincipal;
 }
 
 @mixin title($fontSize: 40px) {
     @include text($fontSize);
-    color: variaveis.$corTextoSecundario
+    color: variables.$corTextoSecundario
 }
 
 * {
@@ -34,7 +34,7 @@
 }
 
 body {
-    background-color: variaveis.$corDeFundo;
+    background-color: variables.$corDeFundo;
 }
 
 .text-big {
@@ -51,7 +51,7 @@ body {
 
 .link-text {
     @include text(18px);
-    color: variaveis.$corTextoSecundario;
+    color: variables.$corTextoSecundario;
     text-decoration: underline;
 }
 
@@ -72,7 +72,7 @@ body {
     width: 100%;
     height: 60px;
     font-size: 18px;
-    color: variaveis.$corTextoSecundario;
+    color: variables.$corTextoSecundario;
     background-color: #6421ff;
     border-radius: 4px;
     margin-top: 2vw;
@@ -104,4 +104,25 @@ body {
             margin-bottom: 24px;
         }
     }
+
+    &-image-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &-text-container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
 }
