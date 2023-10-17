@@ -1,0 +1,71 @@
+@use "variables";
+
+.footer {
+    padding: 26px 8px;
+
+    &-container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &-logo {
+        width: 80px;
+        margin: 0px auto 10px;
+    }
+
+    &-links {
+        margin-bottom: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            display: inline-block;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                padding: 8px 16px;
+                display: block;
+
+                &:hover {
+                    color: variables.$corTextoSecundario
+                }
+            }
+
+            .language-selector {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 18px;
+                    width: 18px;
+                }
+
+                select {
+                    background-color: transparent;
+                    border: none;
+                    color: variables.$corTextoPrincipal;
+                    cursor: pointer;
+                    height: 38px;
+
+                    &:hover {
+                        color: variables.$corTextoSecundario
+                    }
+                    
+                    option {
+                        color: variables.$corDeFundo;
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+}
