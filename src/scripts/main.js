@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll("[data-tab-button]");
+    const questions = document.querySelectorAll("[data-faq-question]");
 
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener("click", function(botao) {
-            const tabTarget = botao.target.dataset.tabButton;
+        buttons[i].addEventListener("click", function(button) {
+            const tabTarget = button.target.dataset.tabButton;
             const tab = document.querySelector(`[data-tab-id = ${tabTarget}]`);
 
             hideTabs();
@@ -12,8 +13,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
             hideButtons();
             
-            botao.target.classList.add("shows-tabs-button-is-active");
+            button.target.classList.add("shows-tabs-button-is-active");
         });
+    }
+
+    for (let i = 0; i < questions.length; i++) {
+        questions[i].addEventListener("click", openOrCloseAnswer);
+    }
+
+    function openOrCloseAnswer(element) {
+        const id = "faq-questions-item-is-open";
+        const dadElement = element.target.parentNode;
+
+        dadElement.classList.toggle(id);
     }
 
     function hideButtons() {
