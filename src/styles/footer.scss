@@ -33,7 +33,7 @@
                 display: block;
 
                 &:hover {
-                    color: variables.$corTextoSecundario
+                    color: variables.$corTextoSecundario;
                 }
             }
 
@@ -54,7 +54,7 @@
                     height: 38px;
 
                     &:hover {
-                        color: variables.$corTextoSecundario
+                        color: variables.$corTextoSecundario;
                     }
                     
                     option {
