@@ -5,6 +5,7 @@
 @use "devices";
 @use "faq";
 @use "footer";
+@use "header";
 
 @font-face {
     font-family: "Avenir";
@@ -34,6 +35,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Avenir", sans-serif;
+    list-style: none;
 }
 
 body {
@@ -71,21 +73,43 @@ body {
 }
 
 .main-button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 60px;
     font-size: 18px;
     color: variables.$corTextoSecundario;
-    background-color: #6421ff;
+    background-color: variables.$corDeFundoBotaoPrimario;
     border-radius: 4px;
-    margin-top: 2vw;
-    margin-bottom: 8px;
-    border: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid variables.$corDeFundoBotaoPrimario;
     cursor: pointer;
     transition: all 0.2s ease;
 
     &:hover {
         background-color: #8024fc;
+    }
+
+    &-secondary {
+        background-color: variables.$corDeFundoBotaoSecundario;
+        border-color: variables.$corDeFundoBotaoSecundario;
+
+        &:hover {
+            background-color: #086cfc;
+        }
+    }
+
+    &-tertiary {
+        background-color: rgba(variables.$corDeFundoBotaoTerciario, 0.8);
+        border-color: variables.$corTextoSecundario;
+
+        &:hover {
+            background-color: variables.$corTextoSecundario;
+            color: #000;
+        }
     }
 }
 

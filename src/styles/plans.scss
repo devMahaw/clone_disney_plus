@@ -9,7 +9,6 @@
     &-list {
         display: flex;
         justify-content: space-around;
-        list-style: none;
         margin-top: 50px;
 
         &-item {
@@ -17,6 +16,11 @@
             padding: 60px 44px 44px;
             max-width: 380px;
             width: 100%;
+
+            .main-button {
+                margin-top: 2vw;
+                margin-bottom: 8px;
+            }
 
             &:nth-child(2) {
                 background-image: url(../../dist/images/fundo_combo_plus.png);

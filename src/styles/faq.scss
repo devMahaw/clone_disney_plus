@@ -7,8 +7,6 @@
     }
 
     &-questions {
-        list-style: none;
-
         &-item {
             background-color: #13151d;
             margin-bottom: 16px;
@@ -41,7 +39,6 @@
 
                 & ul li {
                     padding: 2px 0 2px 10px;
-                    list-style: none;
                 }
 
                 & p {
