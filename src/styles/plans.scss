@@ -1,6 +1,5 @@
 .plans {
     padding: 5.6vw;
-    min-height: 100vh;
 
     h2 {
         text-align: center;
@@ -46,13 +45,11 @@
 
 @media (max-width: 767px) {
     .plans {
-        margin-bottom: 100px;
-
         &-list {
             display: block;
+            margin-top: -30px;
 
             &-item {
-                padding: 10px 44px 44px;
 
                 img {
                     height: 100%;
@@ -63,6 +60,27 @@
 
         p {
             margin: 15px 0px;
+        }
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    .plans {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .plans {
+        &-list {
+            margin-top: -30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

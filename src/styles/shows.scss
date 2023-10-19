@@ -2,7 +2,6 @@
 
 .shows {
     padding: 2vw 5.6vw;
-    min-height: 100vh;
 
     &-list {
         display: none;
@@ -56,6 +55,16 @@
             &-button {
                 font-size: 16px;
             }
+        }
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    .shows {
+        &-tabs {
+            padding-left: 0px;
+            white-space: none;
+            overflow-x: none;
         }
     }
 }

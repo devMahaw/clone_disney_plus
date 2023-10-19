@@ -76,3 +76,19 @@
         }
     }
 }
+
+@media (max-width: 767px) and (orientation: landscape) {
+    .faq {
+        &-questions {
+            &-item {
+                &-question {
+                    max-width: 500px;
+
+                    &::after {
+                        right: -150px;
+                    }
+                }
+            }
+        }
+    }
+}
