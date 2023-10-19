@@ -41,3 +41,21 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .shows {
+        &-list {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-tabs {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
+
+            &-button {
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -51,3 +51,26 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .header {
+        &-container {
+            padding: 0px 12px 0px 20px;
+        }
+
+        &-logo {
+            max-width: 64px;
+        }
+
+        &-links {
+            &-item {
+                .main-button {
+                    font-size: 13px;
+                    padding: 8px 11px;
+                    height: 40px;
+                    letter-spacing: 0;
+                }
+            }
+        }
+    }
+}

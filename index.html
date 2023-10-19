@@ -13,14 +13,16 @@
             <h1>
                 <img src = "dist/images/disneyplus.svg" class = "header-logo" alt = "Logo da Disney+">
             </h1>
-            <ul class = "header-links">
-                <li class = "header-links-item">
-                    <a href = "#" class = "main-button main-button-secondary">ASSINE AGORA</a>
-                </li>
-                <li class = "header-links-item">
-                    <a href = "#" class = "main-button main-button-tertiary">ENTRAR</a>
-                </li>
-            </ul>
+            <nav>
+                <ul class = "header-links">
+                    <li class = "header-links-item">
+                        <a href = "#" class = "main-button main-button-secondary">ASSINE AGORA</a>
+                    </li>
+                    <li class = "header-links-item">
+                        <a href = "#" class = "main-button main-button-tertiary">ENTRAR</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -155,7 +157,10 @@
             </div>
         </section>
         <section class = "image-text-section image-text-section-image-full-width">
-            <img src = "dist/images/fundo_rei_leao.png" alt = "Imagem com TV, computador, tablet e celular">
+            <picture>
+                <source media = "(max-width: 767px)" srcset = "dist/images/fundo_rei_leao_celular.png">
+                <img src = "dist/images/fundo_rei_leao.png" alt = "Imagem com TV, computador, tablet e celular">
+            </picture>
             <div class = "image-text-section-text-container image-text-section-image-full-width-text-container">
                 <h2 class = "title">Baixe filmes e séries</h2>
                 <p class = "text-big">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>

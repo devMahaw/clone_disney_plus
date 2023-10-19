@@ -43,3 +43,26 @@
         text-align: center;
     }
 }
+
+@media (max-width: 767px) {
+    .plans {
+        margin-bottom: 100px;
+
+        &-list {
+            display: block;
+
+            &-item {
+                padding: 10px 44px 44px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        p {
+            margin: 15px 0px;
+        }
+    }
+}

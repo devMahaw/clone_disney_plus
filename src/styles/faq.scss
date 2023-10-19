@@ -60,3 +60,19 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .faq {
+        &-questions {
+            &-item {
+                &-question {
+                    max-width: 300px;
+
+                    &::after {
+                        right: -25px;
+                    }
+                }
+            }
+        }
+    }
+}

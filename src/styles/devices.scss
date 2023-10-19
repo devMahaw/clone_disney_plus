@@ -26,3 +26,13 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .available-devices {
+        margin-bottom: 330px;
+        
+        &-list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

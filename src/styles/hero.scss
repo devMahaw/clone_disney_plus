@@ -44,3 +44,29 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .hero {
+        background-image: url(../../dist/images/hero_celular.jpeg);
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 100px;
+        margin-top: -55px;
+
+        &-content {
+            &-branding {
+                max-width: 180px;
+            }
+
+            &-combos {
+                display: block;
+
+                &-combo {
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
