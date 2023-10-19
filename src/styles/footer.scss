@@ -68,3 +68,17 @@
         margin-bottom: 16px;
     }
 }
+
+@media (max-width: 767px) {
+    .footer {
+        &-links {
+            &-item {
+                a {
+                    &:active {
+                        color: variables.$corTextoSecundario;
+                    }
+                }
+            }
+        }
+    }
+}
