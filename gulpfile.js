@@ -26,8 +26,9 @@ function compilaSass() {
         .pipe(gulp.dest("./dist/styles"));
 }
 
-exports.default = function() {
-    gulp.watch("./src/styles/*scss", {ignoreInitial: false}, gulp.series(compilaSass));
-    gulp.watch("./src/scripts/*.js", {ignoreInitial: false}, gulp.series(comprimeJavaScript));
-    gulp.watch("./src/images/*", {ignoreInitial: false}, gulp.series(comprimeImagens));
+exports.default = gulp.parallel(compilaSass, comprimeImagens, comprimeJavaScript);
+
+exports.watch = function() {
+    gulp.watch("./src/styles/*scss", {ignoreInitial: false}, gulp.parallel(compilaSass));
+    gulp.watch("./src/scripts/*.js", {ignoreInitial: false}, gulp.parallel(comprimeJavaScript));
 }
